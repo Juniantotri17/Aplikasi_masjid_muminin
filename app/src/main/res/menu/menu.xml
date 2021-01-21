@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Beranda" />
+
+    <item
+        android:id="@+id/navigation_jadwal"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="Jadwal Shalat" />
+
+    <item
+        android:id="@+id/navigation_keuangan"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        android:title="Keuangan" />
+
+    <item
+        android:id="@+id/navigation_Qibla"
+        android:icon="@drawable/ic_navigation_black_24dp"
+        android:title="Qibla" />
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="#ffff"
+    android:id="@+id/appbar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/siti"
+            android:textStyle="bold"
+            android:text="Al-Muminin"
+            android:textColor="#21409A"
+            android:textSize="25dp"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/appbar_account"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account_circle_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/appbar_search"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="55dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_black_24dp"/>
+
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

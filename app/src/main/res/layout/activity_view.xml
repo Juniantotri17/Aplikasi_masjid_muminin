@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminBerita.View">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="6dp"
+            card_view:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/appbar"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_single_view_Activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/masjid">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_news_gradient"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/textView_single_view_Activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:text="Masjid Jami Al-Muminin"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"/>
+                    <TextView
+                        android:id="@+id/textView_tgl_act"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:text="Sabtu, 04 Apr 2020 17:41 WIB"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="290dp">
+
+                <ImageView
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="320dp"
+                    android:src="@drawable/ic_edit_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_delete_black_24dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="330dp">
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/textView_desk_act"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#686666"
+                    android:text="Deskripsi"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

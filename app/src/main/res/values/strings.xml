@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Bismillah</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="compass_dial" translatable="false">Compass Dial</string>
+    <string name="compass_hands" translatable="false">Compass Hands</string>
+    <string name="gps_settings_title">Pengaturan GPS</string>
+    <string name="gps_settings_text">GPS belum aktif, buka menu pengaturan?</string>
+    <string name="settings_button_ok">Pengaturan</string>
+    <string name="settings_button_cancel">Batal</string>
+    <string name="msg_permission_not_granted_yet">Location access not available yet</string>
+    <string name="msg_permission_granted">Akses lokasi tersedia, tekan tombol GPS sekarang.</string>
+    <string name="toast_permission_required">Aplikasi ini membutuhkan Access Location</string>
+    <string name="your_location">Lokasi Anda:</string>
+    <string name="location_not_ready">Lokasi belum siap, silakan tekan tombol lagi.</string>
+    <string name="qibla_direction">Arah Ka\'bah:</string>
+    <string name="pls_enable_location">Silakan aktifkan lokasi dan tekan tombol lagi.</string>
+    <string name="degree_from_north">Derajat dari utara.</string>
+    <string name="using_last_location">Menggunakan lokasi terakhir.</string>
+</resources>

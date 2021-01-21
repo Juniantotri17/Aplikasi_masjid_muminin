@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminBerita.InputBerita">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputImageName"
+            android:background="@drawable/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Judul"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewAdd"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/addimage"
+            />
+
+        <EditText
+            android:id="@+id/inputImageDetail"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Isi Berita..........."
+            android:textSize="15dp"
+            android:gravity="top"
+            android:minHeight="300dp"/>
+        <EditText
+            android:id="@+id/date"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:background="@drawable/input"
+            android:hint="Tanggal"/>
+        <TextView
+            android:id="@+id/textViewProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:text="0.0 %"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_below="@+id/textViewProgress"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:background="@drawable/main_news_gradient"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/progressBar"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+    </LinearLayout>
+</ScrollView>

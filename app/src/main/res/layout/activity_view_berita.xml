@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewBerita">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="6dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/lin1_berita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/appbar"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_view_berita"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/masjid"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_news_gradient"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/judul_view_berita"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:text="Masjid Jami Al-Muminin"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tgl_view_berita"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Sabtu, 04 Apr 2020 17:41 WIB"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView_desk_berita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="#686666"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
